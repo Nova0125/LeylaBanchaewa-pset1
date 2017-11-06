@@ -17,12 +17,10 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
-            android:inputType="none|textPersonName"
+            android:inputType="textPersonName"
             android:text="@string/title"
             android:textAlignment="center"
-            android:textSize="24sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -30,6 +28,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
+            android:baselineAligned="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -38,95 +37,88 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="182dp">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
-                <FrameLayout
+                <ImageView
+                    android:id="@+id/Body"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal">
+                    android:contentDescription="@string/body"
+                    app:srcCompat="@drawable/body" />
 
-                    <ImageView
-                        android:id="@+id/Body"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/body"
-                        app:srcCompat="@drawable/body" />
+                <ImageView
+                    android:id="@+id/Arms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/arms"
+                    app:srcCompat="@drawable/arms" />
 
-                    <ImageView
-                        android:id="@+id/Arms"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/arms"
-                        app:srcCompat="@drawable/arms" />
+                <ImageView
+                    android:id="@+id/Shoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/shoes"
+                    app:srcCompat="@drawable/shoes" />
 
-                    <ImageView
-                        android:id="@+id/Shoes"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/shoes"
-                        app:srcCompat="@drawable/shoes" />
+                <ImageView
+                    android:id="@+id/Ears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ears"
+                    app:srcCompat="@drawable/ears" />
 
-                    <ImageView
-                        android:id="@+id/Ears"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/ears"
-                        app:srcCompat="@drawable/ears" />
+                <ImageView
+                    android:id="@+id/Hat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/hat"
+                    app:srcCompat="@drawable/hat" />
 
-                    <ImageView
-                        android:id="@+id/Hat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/hat"
-                        app:srcCompat="@drawable/hat" />
+                <ImageView
+                    android:id="@+id/Eyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/eyes"
+                    app:srcCompat="@drawable/eyes" />
 
-                    <ImageView
-                        android:id="@+id/Eyes"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@string/eyes"
-                        app:srcCompat="@drawable/eyes" />
+                <ImageView
+                    android:id="@+id/Eyebrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/eyebrows"
+                    app:srcCompat="@drawable/eyebrows" />
 
-                    <ImageView
-                        android:id="@+id/Eyebrows"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/eyebrows"
-                        app:srcCompat="@drawable/eyebrows" />
+                <ImageView
+                    android:id="@+id/Glasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/glasses"
+                    app:srcCompat="@drawable/glasses" />
 
-                    <ImageView
-                        android:id="@+id/Glasses"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/glasses"
-                        app:srcCompat="@drawable/glasses" />
+                <ImageView
+                    android:id="@+id/Mouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/mouth"
+                    app:srcCompat="@drawable/mouth" />
 
-                    <ImageView
-                        android:id="@+id/Mouth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/mouth"
-                        app:srcCompat="@drawable/mouth" />
+                <ImageView
+                    android:id="@+id/Moustache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/moustache"
+                    app:srcCompat="@drawable/mustache" />
 
-                    <ImageView
-                        android:id="@+id/Moustache"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/moustache"
-                        app:srcCompat="@drawable/mustache" />
-
-                    <ImageView
-                        android:id="@+id/Nose"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/nose"
-                        app:srcCompat="@drawable/nose" />
-                </FrameLayout>
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/Nose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/nose"
+                    app:srcCompat="@drawable/nose" />
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"

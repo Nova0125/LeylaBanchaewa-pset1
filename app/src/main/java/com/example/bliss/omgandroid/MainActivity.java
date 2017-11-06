@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 ImageView imgArms = findViewById(R.id.Arms);
                 if (checked)
                     imgArms.setVisibility(View.VISIBLE);
-            else
+                else
                     imgArms.setVisibility(View.INVISIBLE);
                 break;
             case R.id.cbEars:
