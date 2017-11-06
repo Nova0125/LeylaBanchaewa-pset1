@@ -15,6 +15,9 @@ A few things this app has built in:
 * Data preservation upon rotation
 
 _**Screenshots** of the app are include in a seperate document in the "doc" folder_
+![Landscape mode](https://github.com/Nova0125/LeylaBanchaewa-pset1/blob/master/doc/Landscape mode mr. potatohead (2017).png)
+![Portrait mode] (https://github.com/Nova0125/LeylaBanchaewa-pset1/blob/master/doc/Portrait%20mode%20mr.%20potatohead%20(2017).png)
+
 
 __Created by Leyla Banchaewa__
 _Course Native Apps Studio (Android), pset1_
